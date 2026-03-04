@@ -90,6 +90,7 @@ The analysis focuses on common vulnerabilities, including unauthenticated access
   
 ![BOLA Enumeration](screenshots/02-bola-enumeration.png)
 
+![User Filter](screenshots/02-user-filter.png)
   
 - **Severity:** High
 
