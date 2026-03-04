@@ -20,12 +20,10 @@
     - [3. Excessive Data Exposure](#3-excessive-data-exposure)
       
     - [4. Missing Security Headers](#4-missing-security-headers)
-      
-6. [Evidence (Screenshots)](#evidence-screenshots)
     
-7. [Conclusion & Recommendations](#conclusion--recommendations)
+6. [Conclusion & Recommendations](#conclusion--recommendations)
     
-8. [References](#references)
+7. [References](#references)
 
 ---
 
@@ -76,7 +74,9 @@ The analysis focuses on common vulnerabilities, including unauthenticated access
   
 - **Risk:** Anyone can retrieve sensitive user information without logging in.
   
-- **Evidence:** `01-public-access.png`
+**Evidence:**
+
+  ![Public Access](screenshots/01-public-access.png)
   
 - **Severity:** Medium (would be High in a real production environment)
 
@@ -86,7 +86,10 @@ The analysis focuses on common vulnerabilities, including unauthenticated access
   
 - **Risk:** Attackers could enumerate all users and access personal information.
   
-- **Evidence:** `02-bola-enumeration.png`
+**Evidence:**
+  
+![BOLA Enumeration](screenshots/02-bola-enumeration.png)
+
   
 - **Severity:** High
 
@@ -96,11 +99,11 @@ The analysis focuses on common vulnerabilities, including unauthenticated access
   
 - **Risk:** Bulk data exposure allows profiling, large-scale scraping, and collection of sensitive information.
   
-- **Evidence:** `03-bulk-data.png`
+**Evidence:**
+
+![Bulk Data](screenshots/03-bulk-data.png)
   
 - **Severity:** Medium
-
----
 
 ### 4. Missing Security Headers
 
@@ -108,21 +111,11 @@ The analysis focuses on common vulnerabilities, including unauthenticated access
   
 - **Risk:** Missing headers weaken client-side security and could allow certain browser-based attacks.
   
-- **Evidence:** `04-security-headers.png`
-  
-- **Severity:** Low
-
----
-
-## Evidence (Screenshots)
-
-![Public Access](screenshots/01-public-access.png)
-
-![BOLA Enumeration](screenshots/02-bola-enumeration.png)
-
-![Bulk Data](screenshots/03-bulk-data.png)
+**Evidence:** 
 
 ![Security Headers](screenshots/04-security-headers.png)
+  
+- **Severity:** Low
 
 ---
 
